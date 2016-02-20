@@ -23,7 +23,7 @@ function findValue() {
 
 function pushFirebase(data){
   console.log('Sending ' + JSON.stringify(data) + ' to firebase!\n')
-  myFirebaseRef.set(data);
+  myFirebaseRef.push(data);
 }
 
 var getData = function(uri, element){
@@ -48,7 +48,7 @@ var getData = function(uri, element){
           console.log(result)
           element.append(getReply(result))
         } else {
-          pushFirebase( { 'intent': intent, 'entities': entities } )
+          pushFirebase( { 'intent': intent, 'entities': entities, 'timestamp': Firebase.ServerValue.TIMESTAMP } )
           element.append(getReply("Intent: "+ intent + "\n value: " + entities))
         }
       } else{
