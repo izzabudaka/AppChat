@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <!-- This file has been downloaded from Bootsnipp.com. Enjoy! -->
+    <title>Julie</title>
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <style type="text/css">
+    .chat
+    {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    }
+
+    .chat li
+    {
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px dotted #B3A9A9;
+    }
+
+    .chat li.left .chat-body
+    {
+    margin-left: 60px;
+    }
+
+    .chat li.right .chat-body
+    {
+    margin-right: 60px;
+    }
+
+
+    .chat li .chat-body p
+    {
+    margin: 0;
+    color: #777777;
+    }
+
+    .panel .slidedown .glyphicon, .chat .glyphicon
+    {
+    margin-right: 5px;
+    }
+
+    .panel-body
+    {
+    overflow-y: scroll;
+    }
+    .panel-primary
+    {
+    border-color:#fff;
+    }
+    .panel-footer
+    {
+    position: fixed;
+    bottom: 0;
+    left:0;
+    right:0;
+    }
+    .row {
+      left:0;
+      right:0;
+    }
+    </style>
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+<div class="container">
+    <div class="row">
+            <div class="panel panel-primary">
+                <div class="panel-body">
+                    <ul class="chat">
+                        <li class="left clearfix"><span class="chat-img pull-left">
+                            <img src="http://www.iconsfind.com/wp-content/uploads/2016/01/20160111_5693b29472389.png" height="50" width="50" alt="User Avatar" class="img-circle" />
+                        </span>
+                            <div class="chat-body clearfix">
+                                <div class="header">
+                                    <strong class="primary-font">Julie</strong> <small class="pull-right text-muted">
+                                        <span class="glyphicon glyphicon-time"></span>12 mins ago</small>
+                                </div>
+                                <p>
+                                    What do you need?
+                                </p>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="panel-footer">
+                    <div class="input-group">
+                        <input id="btn-input" type="text" class="form-control input-sm" placeholder="Type your message here..." />
+                        <span class="input-group-btn">
+                            <button class="btn btn-warning btn-sm" id="btn-chat">
+                                Send</button>
+                        </span>
+                    </div>
+                </div>
+            </div>
+    </div>
+</div>
+
+<script src="index.js"></script>
+
+</script>
+  </body>
+</html>
