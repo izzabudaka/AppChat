@@ -1,0 +1,18 @@
+{
+  "name": "insert-text",
+  "main": "./lib/insert-text",
+  "version": "0.0.0",
+  "description": "A short description of your package",
+  "keywords": [
+  ],
+  "activationCommands": {
+    "atom-workspace": "insert-text:insertCode"
+  },
+  "repository": "https://github.com/atom/insert-text",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {
+  }
+}
