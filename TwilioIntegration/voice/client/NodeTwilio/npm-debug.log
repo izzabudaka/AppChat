@@ -1,0 +1,482 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'request-debug' ]
+2 info using npm@3.3.12
+3 info using node@v5.2.0
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData request-debug
+8 silly fetchNamedPackageData request-debug
+9 silly mapToRegistry name request-debug
+10 silly mapToRegistry using default registry
+11 silly mapToRegistry registry https://registry.npmjs.org/
+12 silly mapToRegistry uri https://registry.npmjs.org/request-debug
+13 verbose request uri https://registry.npmjs.org/request-debug
+14 verbose request no auth needed
+15 info attempt registry request try #1 at 7:42:01 AM
+16 verbose request id b6e1b494d3503b9d
+17 http request GET https://registry.npmjs.org/request-debug
+18 http 200 https://registry.npmjs.org/request-debug
+19 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+19 verbose headers   etag: '"B4KEW8YJMS6LX1V53I6AM8DMO"',
+19 verbose headers   'content-type': 'application/json',
+19 verbose headers   'cache-control': 'max-age=300',
+19 verbose headers   'content-length': '12967',
+19 verbose headers   'accept-ranges': 'bytes',
+19 verbose headers   date: 'Sun, 21 Feb 2016 07:42:02 GMT',
+19 verbose headers   via: '1.1 varnish',
+19 verbose headers   age: '0',
+19 verbose headers   connection: 'keep-alive',
+19 verbose headers   'x-served-by': 'cache-dfw1823-DFW',
+19 verbose headers   'x-cache': 'MISS',
+19 verbose headers   'x-cache-hits': '0',
+19 verbose headers   'x-timer': 'S1456040521.962088,VS0,VE218',
+19 verbose headers   vary: 'Accept' }
+20 silly get cb [ 200,
+20 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+20 silly get     etag: '"B4KEW8YJMS6LX1V53I6AM8DMO"',
+20 silly get     'content-type': 'application/json',
+20 silly get     'cache-control': 'max-age=300',
+20 silly get     'content-length': '12967',
+20 silly get     'accept-ranges': 'bytes',
+20 silly get     date: 'Sun, 21 Feb 2016 07:42:02 GMT',
+20 silly get     via: '1.1 varnish',
+20 silly get     age: '0',
+20 silly get     connection: 'keep-alive',
+20 silly get     'x-served-by': 'cache-dfw1823-DFW',
+20 silly get     'x-cache': 'MISS',
+20 silly get     'x-cache-hits': '0',
+20 silly get     'x-timer': 'S1456040521.962088,VS0,VE218',
+20 silly get     vary: 'Accept' } ]
+21 verbose get saving request-debug to /Users/Home/.npm/registry.npmjs.org/request-debug/.cache.json
+22 silly install normalizeTree
+23 silly loadCurrentTree Finishing
+24 silly loadIdealTree Starting
+25 silly install loadIdealTree
+26 silly cloneCurrentTree Starting
+27 silly install cloneCurrentTreeToIdealTree
+28 silly cloneCurrentTree Finishing
+29 silly loadShrinkwrap Starting
+30 silly install loadShrinkwrap
+31 silly loadShrinkwrap Finishing
+32 silly loadAllDepsIntoIdealTree Starting
+33 silly install loadAllDepsIntoIdealTree
+34 silly resolveWithNewModule request-debug@0.2.0 checking installable status
+35 silly cache add args [ 'request-debug', null ]
+36 verbose cache add spec request-debug
+37 silly cache add parsed spec Result {
+37 silly cache add   raw: 'request-debug',
+37 silly cache add   scope: null,
+37 silly cache add   name: 'request-debug',
+37 silly cache add   rawSpec: '',
+37 silly cache add   spec: '*',
+37 silly cache add   type: 'range' }
+38 silly addNamed request-debug@*
+39 verbose addNamed "*" is a valid semver range for request-debug
+40 silly addNameRange { name: 'request-debug', range: '*', hasData: false }
+41 silly mapToRegistry name request-debug
+42 silly mapToRegistry using default registry
+43 silly mapToRegistry registry https://registry.npmjs.org/
+44 silly mapToRegistry uri https://registry.npmjs.org/request-debug
+45 verbose addNameRange registry:https://registry.npmjs.org/request-debug not in flight; fetching
+46 verbose get https://registry.npmjs.org/request-debug not expired, no request
+47 silly addNameRange number 2 { name: 'request-debug', range: '*', hasData: true }
+48 silly addNameRange versions [ 'request-debug',
+48 silly addNameRange   [ '0.0.1', '0.0.2', '0.0.3', '0.1.0', '0.1.1', '0.2.0' ] ]
+49 silly addNamed request-debug@0.2.0
+50 verbose addNamed "0.2.0" is a plain semver version for request-debug
+51 silly mapToRegistry name request-debug
+52 silly mapToRegistry using default registry
+53 silly mapToRegistry registry https://registry.npmjs.org/
+54 silly mapToRegistry uri https://registry.npmjs.org/request-debug
+55 verbose addRemoteTarball https://registry.npmjs.org/request-debug/-/request-debug-0.2.0.tgz not in flight; adding
+56 verbose addRemoteTarball [ 'https://registry.npmjs.org/request-debug/-/request-debug-0.2.0.tgz',
+56 verbose addRemoteTarball   'fc054ec817181b04ca41a052c136f61c48abaf78' ]
+57 info retry fetch attempt 1 at 7:42:01 AM
+58 info attempt registry request try #1 at 7:42:01 AM
+59 http fetch GET https://registry.npmjs.org/request-debug/-/request-debug-0.2.0.tgz
+60 http fetch 200 https://registry.npmjs.org/request-debug/-/request-debug-0.2.0.tgz
+61 silly fetchAndShaCheck shasum fc054ec817181b04ca41a052c136f61c48abaf78
+62 verbose addTmpTarball /var/folders/pd/rxxj91fj50n57_c5cb_slfx00000gn/T/npm-36028-799c29c6/registry.npmjs.org/request-debug/-/request-debug-0.2.0.tgz not in flight; adding
+63 verbose addTmpTarball already have metadata; skipping unpack for request-debug@0.2.0
+64 silly cache afterAdd request-debug@0.2.0
+65 verbose afterAdd /Users/Home/.npm/request-debug/0.2.0/package/package.json not in flight; writing
+66 verbose afterAdd /Users/Home/.npm/request-debug/0.2.0/package/package.json written
+67 silly fetchNamedPackageData stringify-clone
+68 silly mapToRegistry name stringify-clone
+69 silly mapToRegistry using default registry
+70 silly mapToRegistry registry https://registry.npmjs.org/
+71 silly mapToRegistry uri https://registry.npmjs.org/stringify-clone
+72 verbose request uri https://registry.npmjs.org/stringify-clone
+73 verbose request no auth needed
+74 info attempt registry request try #1 at 7:42:02 AM
+75 http request GET https://registry.npmjs.org/stringify-clone
+76 http 200 https://registry.npmjs.org/stringify-clone
+77 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+77 verbose headers   etag: '"AROOJJ5RS2B65O8BY7BOFUQ74"',
+77 verbose headers   'content-type': 'application/json',
+77 verbose headers   'cache-control': 'max-age=300',
+77 verbose headers   'content-length': '8330',
+77 verbose headers   'accept-ranges': 'bytes',
+77 verbose headers   date: 'Sun, 21 Feb 2016 07:42:03 GMT',
+77 verbose headers   via: '1.1 varnish',
+77 verbose headers   age: '0',
+77 verbose headers   connection: 'keep-alive',
+77 verbose headers   'x-served-by': 'cache-dfw1820-DFW',
+77 verbose headers   'x-cache': 'MISS',
+77 verbose headers   'x-cache-hits': '0',
+77 verbose headers   'x-timer': 'S1456040522.797286,VS0,VE258',
+77 verbose headers   vary: 'Accept' }
+78 silly get cb [ 200,
+78 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+78 silly get     etag: '"AROOJJ5RS2B65O8BY7BOFUQ74"',
+78 silly get     'content-type': 'application/json',
+78 silly get     'cache-control': 'max-age=300',
+78 silly get     'content-length': '8330',
+78 silly get     'accept-ranges': 'bytes',
+78 silly get     date: 'Sun, 21 Feb 2016 07:42:03 GMT',
+78 silly get     via: '1.1 varnish',
+78 silly get     age: '0',
+78 silly get     connection: 'keep-alive',
+78 silly get     'x-served-by': 'cache-dfw1820-DFW',
+78 silly get     'x-cache': 'MISS',
+78 silly get     'x-cache-hits': '0',
+78 silly get     'x-timer': 'S1456040522.797286,VS0,VE258',
+78 silly get     vary: 'Accept' } ]
+79 verbose get saving stringify-clone to /Users/Home/.npm/registry.npmjs.org/stringify-clone/.cache.json
+80 silly resolveWithNewModule stringify-clone@1.1.1 checking installable status
+81 silly cache add args [ 'stringify-clone@^1.0.0', null ]
+82 verbose cache add spec stringify-clone@^1.0.0
+83 silly cache add parsed spec Result {
+83 silly cache add   raw: 'stringify-clone@^1.0.0',
+83 silly cache add   scope: null,
+83 silly cache add   name: 'stringify-clone',
+83 silly cache add   rawSpec: '^1.0.0',
+83 silly cache add   spec: '>=1.0.0 <2.0.0',
+83 silly cache add   type: 'range' }
+84 silly addNamed stringify-clone@>=1.0.0 <2.0.0
+85 verbose addNamed ">=1.0.0 <2.0.0" is a valid semver range for stringify-clone
+86 silly addNameRange { name: 'stringify-clone',
+86 silly addNameRange   range: '>=1.0.0 <2.0.0',
+86 silly addNameRange   hasData: false }
+87 silly mapToRegistry name stringify-clone
+88 silly mapToRegistry using default registry
+89 silly mapToRegistry registry https://registry.npmjs.org/
+90 silly mapToRegistry uri https://registry.npmjs.org/stringify-clone
+91 verbose addNameRange registry:https://registry.npmjs.org/stringify-clone not in flight; fetching
+92 verbose get https://registry.npmjs.org/stringify-clone not expired, no request
+93 silly addNameRange number 2 { name: 'stringify-clone',
+93 silly addNameRange   range: '>=1.0.0 <2.0.0',
+93 silly addNameRange   hasData: true }
+94 silly addNameRange versions [ 'stringify-clone', [ '1.0.0', '1.1.0', '1.1.1' ] ]
+95 silly addNamed stringify-clone@1.1.1
+96 verbose addNamed "1.1.1" is a plain semver version for stringify-clone
+97 silly mapToRegistry name stringify-clone
+98 silly mapToRegistry using default registry
+99 silly mapToRegistry registry https://registry.npmjs.org/
+100 silly mapToRegistry uri https://registry.npmjs.org/stringify-clone
+101 verbose addRemoteTarball https://registry.npmjs.org/stringify-clone/-/stringify-clone-1.1.1.tgz not in flight; adding
+102 verbose addRemoteTarball [ 'https://registry.npmjs.org/stringify-clone/-/stringify-clone-1.1.1.tgz',
+102 verbose addRemoteTarball   '309a235fb4ecfccd7d388dbe18ba904facaf433b' ]
+103 info retry fetch attempt 1 at 7:42:02 AM
+104 info attempt registry request try #1 at 7:42:02 AM
+105 http fetch GET https://registry.npmjs.org/stringify-clone/-/stringify-clone-1.1.1.tgz
+106 http fetch 200 https://registry.npmjs.org/stringify-clone/-/stringify-clone-1.1.1.tgz
+107 silly fetchAndShaCheck shasum 309a235fb4ecfccd7d388dbe18ba904facaf433b
+108 verbose addTmpTarball /var/folders/pd/rxxj91fj50n57_c5cb_slfx00000gn/T/npm-36028-799c29c6/registry.npmjs.org/stringify-clone/-/stringify-clone-1.1.1.tgz not in flight; adding
+109 verbose addTmpTarball already have metadata; skipping unpack for stringify-clone@1.1.1
+110 silly cache afterAdd stringify-clone@1.1.1
+111 verbose afterAdd /Users/Home/.npm/stringify-clone/1.1.1/package/package.json not in flight; writing
+112 verbose afterAdd /Users/Home/.npm/stringify-clone/1.1.1/package/package.json written
+113 silly loadAllDepsIntoIdealTree Finishing
+114 silly idealTree:prePrune your-app@0.1.0
+114 silly idealTree:prePrune ├── ansi-regex@2.0.0
+114 silly idealTree:prePrune ├── ansi-styles@2.1.0
+114 silly idealTree:prePrune ├── asn1@0.1.11
+114 silly idealTree:prePrune ├── assert-plus@0.1.5
+114 silly idealTree:prePrune ├── async@0.9.2
+114 silly idealTree:prePrune ├── aws-sign2@0.5.0
+114 silly idealTree:prePrune ├── base64-url@1.2.1
+114 silly idealTree:prePrune ├── base64url@1.0.6
+114 silly idealTree:prePrune ├─┬ bl@0.9.5
+114 silly idealTree:prePrune │ └── readable-stream@1.0.33
+114 silly idealTree:prePrune ├── bluebird@2.10.2
+114 silly idealTree:prePrune ├── boom@2.10.1
+114 silly idealTree:prePrune ├── buffer-equal-constant-time@1.0.1
+114 silly idealTree:prePrune ├── camelcase-keys@1.0.0
+114 silly idealTree:prePrune ├── camelcase@1.2.1
+114 silly idealTree:prePrune ├── caseless@0.9.0
+114 silly idealTree:prePrune ├── chalk@1.1.1
+114 silly idealTree:prePrune ├── combined-stream@0.0.7
+114 silly idealTree:prePrune ├── commander@2.9.0
+114 silly idealTree:prePrune ├── concat-stream@1.4.10
+114 silly idealTree:prePrune ├── core-util-is@1.0.2
+114 silly idealTree:prePrune ├── cryptiles@2.0.5
+114 silly idealTree:prePrune ├── ctype@0.5.3
+114 silly idealTree:prePrune ├── delayed-stream@0.0.5
+114 silly idealTree:prePrune ├── deprecate@0.1.0
+114 silly idealTree:prePrune ├── ecdsa-sig-formatter@1.0.5
+114 silly idealTree:prePrune ├── escape-string-regexp@1.0.4
+114 silly idealTree:prePrune ├─┬ firebase@2.4.1
+114 silly idealTree:prePrune │ └─┬ faye-websocket@0.9.3
+114 silly idealTree:prePrune │   └─┬ websocket-driver@0.5.2
+114 silly idealTree:prePrune │     └── websocket-extensions@0.1.1
+114 silly idealTree:prePrune ├── forever-agent@0.6.1
+114 silly idealTree:prePrune ├── form-data@0.2.0
+114 silly idealTree:prePrune ├── generate-function@2.0.0
+114 silly idealTree:prePrune ├── generate-object-property@1.2.0
+114 silly idealTree:prePrune ├── get-stdin@4.0.1
+114 silly idealTree:prePrune ├── graceful-readlink@1.0.1
+114 silly idealTree:prePrune ├── har-validator@1.8.0
+114 silly idealTree:prePrune ├── has-ansi@2.0.0
+114 silly idealTree:prePrune ├── hawk@2.3.1
+114 silly idealTree:prePrune ├── hoek@2.16.3
+114 silly idealTree:prePrune ├── http-signature@0.10.1
+114 silly idealTree:prePrune ├── indent-string@1.2.2
+114 silly idealTree:prePrune ├── inherits@2.0.1
+114 silly idealTree:prePrune ├── is-finite@1.0.1
+114 silly idealTree:prePrune ├── is-my-json-valid@2.13.0
+114 silly idealTree:prePrune ├── is-property@1.0.2
+114 silly idealTree:prePrune ├── isarray@0.0.1
+114 silly idealTree:prePrune ├── isstream@0.1.2
+114 silly idealTree:prePrune ├── json-stringify-safe@5.0.1
+114 silly idealTree:prePrune ├── jsonpointer@2.0.0
+114 silly idealTree:prePrune ├── jsonwebtoken@5.4.1
+114 silly idealTree:prePrune ├── jwa@1.1.3
+114 silly idealTree:prePrune ├── jws@3.1.3
+114 silly idealTree:prePrune ├── jwt-simple@0.1.0
+114 silly idealTree:prePrune ├── map-obj@1.0.1
+114 silly idealTree:prePrune ├── meow@2.0.0
+114 silly idealTree:prePrune ├── mime-db@1.12.0
+114 silly idealTree:prePrune ├── mime-types@2.0.14
+114 silly idealTree:prePrune ├── minimist@1.2.0
+114 silly idealTree:prePrune ├── ms@0.7.1
+114 silly idealTree:prePrune ├── node-uuid@1.4.7
+114 silly idealTree:prePrune ├── number-is-nan@1.0.0
+114 silly idealTree:prePrune ├── oauth-sign@0.6.0
+114 silly idealTree:prePrune ├── object-assign@1.0.0
+114 silly idealTree:prePrune ├── q@0.9.7
+114 silly idealTree:prePrune ├── qs@2.4.2
+114 silly idealTree:prePrune ├── readable-stream@1.1.13
+114 silly idealTree:prePrune ├── repeating@1.1.3
+114 silly idealTree:prePrune ├── request-debug@0.2.0
+114 silly idealTree:prePrune ├── request@2.55.0
+114 silly idealTree:prePrune ├── scmp@0.0.3
+114 silly idealTree:prePrune ├── sntp@1.0.9
+114 silly idealTree:prePrune ├── string_decoder@0.10.31
+114 silly idealTree:prePrune ├── string.prototype.startswith@0.2.0
+114 silly idealTree:prePrune ├── stringify-clone@1.1.1
+114 silly idealTree:prePrune ├── stringstream@0.0.5
+114 silly idealTree:prePrune ├── strip-ansi@3.0.0
+114 silly idealTree:prePrune ├── supports-color@2.0.0
+114 silly idealTree:prePrune ├── tough-cookie@2.2.1
+114 silly idealTree:prePrune ├── tunnel-agent@0.4.2
+114 silly idealTree:prePrune ├── twilio@2.9.0
+114 silly idealTree:prePrune ├── typedarray@0.0.6
+114 silly idealTree:prePrune ├── underscore@1.8.3
+114 silly idealTree:prePrune └── xtend@4.0.1
+115 silly loadIdealTree Finishing
+116 silly currentTree your-app@0.1.0
+116 silly currentTree ├── ansi-regex@2.0.0
+116 silly currentTree ├── ansi-styles@2.1.0
+116 silly currentTree ├── asn1@0.1.11
+116 silly currentTree ├── assert-plus@0.1.5
+116 silly currentTree ├── async@0.9.2
+116 silly currentTree ├── aws-sign2@0.5.0
+116 silly currentTree ├── base64-url@1.2.1
+116 silly currentTree ├── base64url@1.0.6
+116 silly currentTree ├─┬ bl@0.9.5
+116 silly currentTree │ └── readable-stream@1.0.33
+116 silly currentTree ├── bluebird@2.10.2
+116 silly currentTree ├── boom@2.10.1
+116 silly currentTree ├── buffer-equal-constant-time@1.0.1
+116 silly currentTree ├── camelcase-keys@1.0.0
+116 silly currentTree ├── camelcase@1.2.1
+116 silly currentTree ├── caseless@0.9.0
+116 silly currentTree ├── chalk@1.1.1
+116 silly currentTree ├── combined-stream@0.0.7
+116 silly currentTree ├── commander@2.9.0
+116 silly currentTree ├── concat-stream@1.4.10
+116 silly currentTree ├── core-util-is@1.0.2
+116 silly currentTree ├── cryptiles@2.0.5
+116 silly currentTree ├── ctype@0.5.3
+116 silly currentTree ├── delayed-stream@0.0.5
+116 silly currentTree ├── deprecate@0.1.0
+116 silly currentTree ├── ecdsa-sig-formatter@1.0.5
+116 silly currentTree ├── escape-string-regexp@1.0.4
+116 silly currentTree ├─┬ firebase@2.4.1
+116 silly currentTree │ └─┬ faye-websocket@0.9.3
+116 silly currentTree │   └─┬ websocket-driver@0.5.2
+116 silly currentTree │     └── websocket-extensions@0.1.1
+116 silly currentTree ├── forever-agent@0.6.1
+116 silly currentTree ├── form-data@0.2.0
+116 silly currentTree ├── generate-function@2.0.0
+116 silly currentTree ├── generate-object-property@1.2.0
+116 silly currentTree ├── get-stdin@4.0.1
+116 silly currentTree ├── graceful-readlink@1.0.1
+116 silly currentTree ├── har-validator@1.8.0
+116 silly currentTree ├── has-ansi@2.0.0
+116 silly currentTree ├── hawk@2.3.1
+116 silly currentTree ├── hoek@2.16.3
+116 silly currentTree ├── http-signature@0.10.1
+116 silly currentTree ├── indent-string@1.2.2
+116 silly currentTree ├── inherits@2.0.1
+116 silly currentTree ├── is-finite@1.0.1
+116 silly currentTree ├── is-my-json-valid@2.13.0
+116 silly currentTree ├── is-property@1.0.2
+116 silly currentTree ├── isarray@0.0.1
+116 silly currentTree ├── isstream@0.1.2
+116 silly currentTree ├── json-stringify-safe@5.0.1
+116 silly currentTree ├── jsonpointer@2.0.0
+116 silly currentTree ├── jsonwebtoken@5.4.1
+116 silly currentTree ├── jwa@1.1.3
+116 silly currentTree ├── jws@3.1.3
+116 silly currentTree ├── jwt-simple@0.1.0
+116 silly currentTree ├── map-obj@1.0.1
+116 silly currentTree ├── meow@2.0.0
+116 silly currentTree ├── mime-db@1.12.0
+116 silly currentTree ├── mime-types@2.0.14
+116 silly currentTree ├── minimist@1.2.0
+116 silly currentTree ├── ms@0.7.1
+116 silly currentTree ├── node-uuid@1.4.7
+116 silly currentTree ├── number-is-nan@1.0.0
+116 silly currentTree ├── oauth-sign@0.6.0
+116 silly currentTree ├── object-assign@1.0.0
+116 silly currentTree ├── q@0.9.7
+116 silly currentTree ├── qs@2.4.2
+116 silly currentTree ├── readable-stream@1.1.13
+116 silly currentTree ├── repeating@1.1.3
+116 silly currentTree ├── request@2.55.0
+116 silly currentTree ├── scmp@0.0.3
+116 silly currentTree ├── sntp@1.0.9
+116 silly currentTree ├── string_decoder@0.10.31
+116 silly currentTree ├── string.prototype.startswith@0.2.0
+116 silly currentTree ├── stringstream@0.0.5
+116 silly currentTree ├── strip-ansi@3.0.0
+116 silly currentTree ├── supports-color@2.0.0
+116 silly currentTree ├── tough-cookie@2.2.1
+116 silly currentTree ├── tunnel-agent@0.4.2
+116 silly currentTree ├── twilio@2.9.0
+116 silly currentTree ├── typedarray@0.0.6
+116 silly currentTree ├── underscore@1.8.3
+116 silly currentTree └── xtend@4.0.1
+117 silly idealTree your-app@0.1.0
+117 silly idealTree ├── ansi-regex@2.0.0
+117 silly idealTree ├── ansi-styles@2.1.0
+117 silly idealTree ├── asn1@0.1.11
+117 silly idealTree ├── assert-plus@0.1.5
+117 silly idealTree ├── async@0.9.2
+117 silly idealTree ├── aws-sign2@0.5.0
+117 silly idealTree ├── base64-url@1.2.1
+117 silly idealTree ├── base64url@1.0.6
+117 silly idealTree ├─┬ bl@0.9.5
+117 silly idealTree │ └── readable-stream@1.0.33
+117 silly idealTree ├── bluebird@2.10.2
+117 silly idealTree ├── boom@2.10.1
+117 silly idealTree ├── buffer-equal-constant-time@1.0.1
+117 silly idealTree ├── camelcase-keys@1.0.0
+117 silly idealTree ├── camelcase@1.2.1
+117 silly idealTree ├── caseless@0.9.0
+117 silly idealTree ├── chalk@1.1.1
+117 silly idealTree ├── combined-stream@0.0.7
+117 silly idealTree ├── commander@2.9.0
+117 silly idealTree ├── concat-stream@1.4.10
+117 silly idealTree ├── core-util-is@1.0.2
+117 silly idealTree ├── cryptiles@2.0.5
+117 silly idealTree ├── ctype@0.5.3
+117 silly idealTree ├── delayed-stream@0.0.5
+117 silly idealTree ├── deprecate@0.1.0
+117 silly idealTree ├── ecdsa-sig-formatter@1.0.5
+117 silly idealTree ├── escape-string-regexp@1.0.4
+117 silly idealTree ├─┬ firebase@2.4.1
+117 silly idealTree │ └─┬ faye-websocket@0.9.3
+117 silly idealTree │   └─┬ websocket-driver@0.5.2
+117 silly idealTree │     └── websocket-extensions@0.1.1
+117 silly idealTree ├── forever-agent@0.6.1
+117 silly idealTree ├── form-data@0.2.0
+117 silly idealTree ├── generate-function@2.0.0
+117 silly idealTree ├── generate-object-property@1.2.0
+117 silly idealTree ├── get-stdin@4.0.1
+117 silly idealTree ├── graceful-readlink@1.0.1
+117 silly idealTree ├── har-validator@1.8.0
+117 silly idealTree ├── has-ansi@2.0.0
+117 silly idealTree ├── hawk@2.3.1
+117 silly idealTree ├── hoek@2.16.3
+117 silly idealTree ├── http-signature@0.10.1
+117 silly idealTree ├── indent-string@1.2.2
+117 silly idealTree ├── inherits@2.0.1
+117 silly idealTree ├── is-finite@1.0.1
+117 silly idealTree ├── is-my-json-valid@2.13.0
+117 silly idealTree ├── is-property@1.0.2
+117 silly idealTree ├── isarray@0.0.1
+117 silly idealTree ├── isstream@0.1.2
+117 silly idealTree ├── json-stringify-safe@5.0.1
+117 silly idealTree ├── jsonpointer@2.0.0
+117 silly idealTree ├── jsonwebtoken@5.4.1
+117 silly idealTree ├── jwa@1.1.3
+117 silly idealTree ├── jws@3.1.3
+117 silly idealTree ├── jwt-simple@0.1.0
+117 silly idealTree ├── map-obj@1.0.1
+117 silly idealTree ├── meow@2.0.0
+117 silly idealTree ├── mime-db@1.12.0
+117 silly idealTree ├── mime-types@2.0.14
+117 silly idealTree ├── minimist@1.2.0
+117 silly idealTree ├── ms@0.7.1
+117 silly idealTree ├── node-uuid@1.4.7
+117 silly idealTree ├── number-is-nan@1.0.0
+117 silly idealTree ├── oauth-sign@0.6.0
+117 silly idealTree ├── object-assign@1.0.0
+117 silly idealTree ├── q@0.9.7
+117 silly idealTree ├── qs@2.4.2
+117 silly idealTree ├── readable-stream@1.1.13
+117 silly idealTree ├── repeating@1.1.3
+117 silly idealTree ├── request-debug@0.2.0
+117 silly idealTree ├── request@2.55.0
+117 silly idealTree ├── scmp@0.0.3
+117 silly idealTree ├── sntp@1.0.9
+117 silly idealTree ├── string_decoder@0.10.31
+117 silly idealTree ├── string.prototype.startswith@0.2.0
+117 silly idealTree ├── stringify-clone@1.1.1
+117 silly idealTree ├── stringstream@0.0.5
+117 silly idealTree ├── strip-ansi@3.0.0
+117 silly idealTree ├── supports-color@2.0.0
+117 silly idealTree ├── tough-cookie@2.2.1
+117 silly idealTree ├── tunnel-agent@0.4.2
+117 silly idealTree ├── twilio@2.9.0
+117 silly idealTree ├── typedarray@0.0.6
+117 silly idealTree ├── underscore@1.8.3
+117 silly idealTree └── xtend@4.0.1
+118 silly generateActionsToTake Starting
+119 silly install generateActionsToTake
+120 warn checkPermissions Missing write access to /Users/Home/hackathon_stuff/AppChat/TwilioIntegration/voice/client/NodeTwilio/node_modules
+121 silly rollbackFailedOptional Starting
+122 silly rollbackFailedOptional Finishing
+123 silly runTopLevelLifecycles Starting
+124 silly runTopLevelLifecycles Finishing
+125 silly install printInstalled
+126 warn EPACKAGEJSON your-app@0.1.0 No description
+127 warn EPACKAGEJSON your-app@0.1.0 No repository field.
+128 warn EPACKAGEJSON your-app@0.1.0 No license field.
+129 verbose stack Error: EACCES: permission denied, access '/Users/Home/hackathon_stuff/AppChat/TwilioIntegration/voice/client/NodeTwilio/node_modules'
+129 verbose stack     at Error (native)
+130 verbose cwd /Users/Home/hackathon_stuff/AppChat/TwilioIntegration/voice/client/NodeTwilio
+131 error Darwin 14.5.0
+132 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "request-debug"
+133 error node v5.2.0
+134 error npm  v3.3.12
+135 error path /Users/Home/hackathon_stuff/AppChat/TwilioIntegration/voice/client/NodeTwilio/node_modules
+136 error code EACCES
+137 error errno -13
+138 error syscall access
+139 error Error: EACCES: permission denied, access '/Users/Home/hackathon_stuff/AppChat/TwilioIntegration/voice/client/NodeTwilio/node_modules'
+139 error     at Error (native)
+139 error  { [Error: EACCES: permission denied, access '/Users/Home/hackathon_stuff/AppChat/TwilioIntegration/voice/client/NodeTwilio/node_modules']
+139 error   errno: -13,
+139 error   code: 'EACCES',
+139 error   syscall: 'access',
+139 error   path: '/Users/Home/hackathon_stuff/AppChat/TwilioIntegration/voice/client/NodeTwilio/node_modules' }
+140 error Please try running this command again as root/Administrator.
+141 verbose exit [ -13, true ]
